@@ -5,6 +5,12 @@ import java.util.List;
 
 public class StartRovers {
 
+    public static void printRoverFinishPoints () {
+        for(Rover bot : Rover.allRovers) {
+            System.out.println(bot.finishPoint);
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Welcome to Mars! How many rovers do you have? ");
         Scanner reader = new Scanner(System.in);
@@ -26,6 +32,6 @@ public class StartRovers {
             i++;
         }
 
-
+        printRoverFinishPoints();
     }
 }
